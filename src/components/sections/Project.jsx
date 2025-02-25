@@ -43,7 +43,7 @@ export const Projects = () => {
                         ))}
                         </div>
                         <div className="flex justify-between items-center">
-                            <a href="#transcendence" className="text-blue-400 hover:text-blue-300 transition-colors my-4">
+                            <a href="https://github.com/lgernido/ft_transcendence" className="text-blue-400 hover:text-blue-300 transition-colors my-4">
                                 View Project → 
                             </a>
                         </div>

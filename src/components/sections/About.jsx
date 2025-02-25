@@ -20,6 +20,7 @@ export const About = () => {
                 <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
                     <p className="text-gray-300 mb-6">
                         I started my software engineer journey in 2023 when I joined 42. I have a strong passion for problem solving and learning about new technology.
+                        Ideally,  I would like to pursue a career in data, machine learning and artificial intelligence. 
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="rounded-xl p-6 hover:translate-y-1 transition-all">
