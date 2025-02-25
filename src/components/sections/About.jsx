@@ -98,12 +98,14 @@ export const About = () => {
                             <h3 className="text-xl font-bold mb-4">Work Experience</h3>
                             <div className="space-y-4 text-gray-300">
                                 <div>
-                                    <h4 className="font-semibold">Software Engineer at ESPN (2020-present)</h4>
-                                    <p>Made women's basketball popular.</p>
+                                    <h4 className="font-semibold">Event Coordinator at Global Sports Week (2022) Internship </h4>
+                                    <p>Cross country event planification - Newsletter and digital assets creation </p>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold">Software Engineer at ESPN (2020-present)</h4>
-                                    <p>Made women's basketball popular.</p>
+                                    <h4 className="font-semibold">Recruitment and Communication Officer at Edusport Academe (2021) Internship</h4>
+                                    <p>Website updating -
+                                        Social media strategy
+                                    </p>
                                 </div>
 
                             </div>
