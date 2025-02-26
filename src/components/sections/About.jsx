@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import resumePDF from '../../assets/resumePDF.pdf';
 
 
 export const About = () => {
@@ -102,7 +103,7 @@ export const About = () => {
                                     <p>Cross country event planification - Newsletter and digital assets creation </p>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold">Recruitment and Communication Officer at Edusport Academe (2021) Internship</h4>
+                                    <h4 className="font-semibold">Recruitment and Communication Officer at Edusport Academy (2021) Internship</h4>
                                     <p>Website updating -
                                         Social media strategy
                                     </p>
@@ -112,7 +113,9 @@ export const About = () => {
                     </div>
                 </div>
                     <div className="mt-5 flex justify-center">
-                <a href="#projects" className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]">
+                <a href={resumePDF}
+                target="_blank"
+                className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]">
                     Full Resume
                 </a>
                     </div>
