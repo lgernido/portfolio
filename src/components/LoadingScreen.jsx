@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const LoadingScreen = ({ onComplete }) => {
-    const [text, setText] = useState("")
+    const [text, setText] = useState("");
     const fullText = "You are about to enter Lucie's website...";
 
     useEffect(() => {
@@ -11,7 +11,7 @@ export const LoadingScreen = ({ onComplete }) => {
             index++;
 
             if (index > fullText.length) {
-                clearInterval(interval)
+                clearInterval(interval);
 
                 setTimeout(() => {
                     onComplete();
@@ -22,18 +22,17 @@ export const LoadingScreen = ({ onComplete }) => {
         return () => clearInterval(interval);
     }, [onComplete]);
 
-
     return (
-    <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
-        <div className="mb -4 text-4xl font-mono font-bold">
-            {text} <span className="animate-blink ml-1"> | </span>
+        <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
+            <div className="mb-4 text-4xl font-mono font-bold">
+                {text} <span className="animate-blink ml-1"> | </span>
             </div>
 
             <div className="mt-10 w-[300px] h-[5px] bg-gray-800 rounded relative overflow-hidden">
-                <div className="w-[40%] h-full bg-blue-500 shadow-[0_0_15px_#3b82f6] animate-loading-bar">
+                <div className="w-[40%] h-full bg-[#73000a] shadow-[0_0_15px_rgba(115, 0, 10, 0.8)] animate-loading-bar">
                     {" "}
                 </div>
             </div>
-    </div>
+        </div>
     );
 };

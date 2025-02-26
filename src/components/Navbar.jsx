@@ -1,53 +1,47 @@
-import { useEffect } from "react"
-
-export const Navbar = ({menuOpen, setMenuOpen}) => {
-
-    useEffect(() => {
-        document.body.style.overflow = menuOpen ? "hidden" : "";
-    }, [menuOpen]);
-
-    return <nav className="fixed top-0 w-full z-40 bg-[rgba-()10, 10, 10, 0.8] -blur-lg border-b border-white/10 shadow-lg">
-        <div className="max-w-5xl mx-auto px-4">
-            <div className="flex justify-between items-center h-16">
-                <a href="#home" className="font-mono text-xl font-bold text-white">
-                    {" "}
-                    lucie<span className="text-blue-500">.gernidos</span>{" "}
-                </a>
-
-                <div 
-                    className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
-                    onClick={() => setMenuOpen((prev) => !prev)}>
-                    &#9776;
-                </div>
-                <div className="hidden md:flex items-center space-x-8">
-                    <a
-                        href="#home" className="text-gray-300 hove:text-white transition-colors"
-                    >
-                        {" "} 
-                        Home {" "} 
+export const Navbar = ({ menuOpen, setMenuOpen, isDarkMode, toggleTheme }) => {
+    return (
+        <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+            <div className="max-w-5xl mx-auto px-4">
+                <div className="flex justify-between items-center h-16">
+                    <a href="#home" className="font-mono text-xl font-bold text-white">
+                        lucie<span className="text-[#73000a]">.gernidos</span>
                     </a>
-                    <a
-                        href="#about" className="text-gray-300 hove:text-white transition-colors"
+                    <div
+                        className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
+                        onClick={() => setMenuOpen((prev) => !prev)}
                     >
-                        {" "} 
-                        About {" "} 
-                    </a>                    
-                    <a
-                        href="#projects" className="text-gray-300 hove:text-white transition-colors"
-                    >
-                        {" "} 
-                        Project {" "} 
-                    </a>                    
-                    <a
-                        href="#contact" className="text-gray-300 hove:text-white transition-colors"
-                    >
-                        {" "} 
-                        Contact {" "} 
-                    </a>
-
+                        &#9776;
+                    </div>
+                    <div className="hidden md:flex items-center space-x-8">
+                        <a href="#home" className="text-white hover:text-[#844247] transition-colors">
+                            Home
+                        </a>
+                        <a href="#about" className="text-white hover:text-[#844247] transition-colors">
+                            About
+                        </a>
+                        <a href="#projects" className="text-white hover:text-[#844247] transition-colors">
+                            Projects
+                        </a>
+                        <a href="#contact" className="text-white hover:text-[#844247] transition-colors">
+                            Contact
+                        </a>
+                        <button
+                        onClick={toggleTheme}
+                        className="p-2 rounded-full bg-[#73000a] text-white hover:bg-[#5a0008] transition-colors"
+                        >       
+                            {isDarkMode ? (
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                            ) : (
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                            )}
+                    </button>
+                    </div>
                 </div>
             </div>
-
-        </div>
-    </nav>
-}
+        </nav>
+    );
+};
