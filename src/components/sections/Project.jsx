@@ -24,7 +24,7 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/lgernido/Inception" target="blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
+                                <a href="https://github.com/lgernido/Inception" target="_blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
                                     View Project →
                                 </a>
                             </div>
@@ -43,7 +43,7 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/lgernido/ft_transcendence" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
+                                <a href="https://github.com/lgernido/ft_transcendence" target="_blank"className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
                                     View Project →
                                 </a>
                             </div>
@@ -62,7 +62,7 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/lgernido/fractol" target="blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
+                                <a href="https://github.com/lgernido/fractol" target="_blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
                                     View Project →
                                 </a>
                             </div>
@@ -81,7 +81,7 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/lgernido/push_swap" target="blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
+                                <a href="https://github.com/lgernido/push_swap" target="_blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
                                     View Project →
                                 </a>
                             </div>
@@ -100,7 +100,7 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/lgernido/minishell" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
+                                <a href="https://github.com/lgernido/minishell" target="_blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
                                     View Project →
                                 </a>
                             </div>
@@ -119,7 +119,7 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/lgernido/42-philo" target="blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
+                                <a href="https://github.com/lgernido/42-philo" target="_blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
                                     View Project →
                                 </a>
                             </div>
@@ -138,7 +138,7 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/lgernido/cub3d" target="blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
+                                <a href="https://github.com/lgernido/cub3d" target="_blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
                                     View Project →
                                 </a>
                             </div>
@@ -157,7 +157,7 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/lgernido/pipex" target="blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
+                                <a href="https://github.com/lgernido/pipex" target="_blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
                                     View Project →
                                 </a>
                             </div>
@@ -176,7 +176,7 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/lgernido/ft_printf" target="blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
+                                <a href="https://github.com/lgernido/ft_printf" target="_blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
                                     View Project →
                                 </a>
                             </div>
@@ -195,7 +195,7 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/lgernido/libft" target="blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
+                                <a href="https://github.com/lgernido/libft" target="_blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
                                     View Project →
                                 </a>
                             </div>
