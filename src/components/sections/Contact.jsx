@@ -1,23 +1,40 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
-import emailjs from 'emailjs-com';
 
 export const Contact = () => {
-
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         message: "",
     });
+    const [submissionStatus, setSubmissionStatus] = useState(null); 
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY)
-            .then((result) => {
-                alert("Message Sent !");
-                setFormData({ name: "", email: "", message: "" });
-            })
-            .catch(() => alert("Oops! Something went wrong. Please try again."));
+    const handleSubmit = async (e) => {
+        e.preventDefault(); 
+
+        const formDataToSend = new FormData();
+        formDataToSend.append("name", formData.name);
+        formDataToSend.append("email", formData.email);
+        formDataToSend.append("message", formData.message);
+
+        try {
+            const response = await fetch("https://formspree.io/f/xgvogllj", {
+                method: "POST",
+                body: formDataToSend,
+                headers: {
+                    Accept: "application/json",
+                },
+            });
+
+            if (response.ok) {
+                setSubmissionStatus("success"); 
+                setFormData({ name: "", email: "", message: "" }); 
+            } else {
+                setSubmissionStatus("error"); 
+            }
+        } catch (error) {
+            setSubmissionStatus("error"); 
+        }
     };
 
     return (
@@ -27,7 +44,7 @@ export const Contact = () => {
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#73000a] to-[#5a0008] bg-clip-text text-transparent text-center">
                         Get in touch
                     </h2>
-                    <form className="space-y-6" onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} className="space-y-6">
                         <div className="relative">
                             <input
                                 type="text"
@@ -70,6 +87,16 @@ export const Contact = () => {
                         >
                             Send Message
                         </button>
+                        {submissionStatus === "success" && (
+                            <p className="mt-4 text-green-500 text-center">
+                                Message sent successfully! 🎉
+                            </p>
+                        )}
+                        {submissionStatus === "error" && (
+                            <p className="mt-4 text-red-500 text-center">
+                                Oops! Something went wrong. Please try again.
+                            </p>
+                        )}
                     </form>
                 </div>
             </RevealOnScroll>
