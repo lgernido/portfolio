@@ -8,7 +8,7 @@ export const Home = () => {
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-[#73000a] to-[#ff7f7f] bg-clip-text text-transparent bg-white leading-right">
                         Hello! I'm Lucie Gernidos
                     </h1>
-                    <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
+                    <p className="text-white text-lg mb-8 max-w-lg mx-auto">
                         I am a software engineer student at 42, based in Paris.
                         Currently available for a 6 months internship.
                     </p>
