@@ -33,7 +33,7 @@ function App() {
             {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
 
             <div className={`min-h-screen transition-colors duration-300 ${
-                isDarkMode ? "bg-black text-gray-100" : "bg-[#F1C6D6] text-black"
+                isDarkMode ? "bg-black text-gray-100" : "bg-[#9ca3af] text-white"
             }`}>
                 <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
                 <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
