@@ -11,6 +11,25 @@ export const Projects = () => {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#73000a]/30 hover:shadow-[0_2px_8px_rgba(115, 0, 10, 0.1)] transition-all">
+                            <h3 className="text-xl font-bold mb-2">dslr</h3>
+                            <p className="text-gray-400 mb-4">
+                                Recreate Hogwarts Sorting Hat using logistic regression
+                            </p>
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                {["Machine Learning", "Python", "Data Science", "Logistic regression", "Pandas"].map((tech, key) => (
+                                    <span key={key}
+                                        className="bg-[#73000a]/10 text-[#844247] py-1 px-3 rounded-full text-sm hover:bg-[#73000a]/20 hover:shadow-[0_2px_8px_rgba(115, 0, 10, 0.2)] transition">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <a href="https://github.com/lgernido/portfolio" target="_blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
+                                    View Project →
+                                </a>
+                            </div>
+                        </div>
+                    <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#73000a]/30 hover:shadow-[0_2px_8px_rgba(115, 0, 10, 0.1)] transition-all">
                             <h3 className="text-xl font-bold mb-2">Portfolio</h3>
                             <p className="text-gray-400 mb-4">
                                 Building my personal portfolio
