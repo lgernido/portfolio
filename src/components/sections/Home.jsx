@@ -10,7 +10,7 @@ export const Home = () => {
                     </h1>
                     <p className="text-white text-lg mb-8 max-w-lg mx-auto">
                         I am a software engineer student at 42, based in Paris.
-                        Currently available for a 6 months internship.
+                        Currently available for work opportunities.
                     </p>
                     <div className="flex justify-center space-x-4">
                         <a href="#projects" className="bg-[#73000a] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(115, 0, 10, 0.4)]">
