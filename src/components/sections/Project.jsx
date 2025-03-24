@@ -24,7 +24,7 @@ export const Projects = () => {
                                 ))}
                             </div>
                             <div className="flex justify-between items-center">
-                                <a href="https://github.com/lgernido/portfolio" target="_blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
+                                <a href="https://github.com/lgernido/dslr" target="_blank" rel="noopener noreferrer" className="text-[#73000a] hover:text-[#5a0008] transition-colors my-4">
                                     View Project →
                                 </a>
                             </div>
