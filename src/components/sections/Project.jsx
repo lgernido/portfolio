@@ -16,7 +16,7 @@ export const Projects = () => {
                                 Recreate Hogwarts Sorting Hat using logistic regression
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["Machine Learning", "Python", "Data Science", "Logistic regression", "Pandas"].map((tech, key) => (
+                                {["Machine Learning", "Python", "Data Science", "Logistic regression", "Pandas", "Matplotlib"].map((tech, key) => (
                                     <span key={key}
                                         className="bg-[#73000a]/10 text-[#844247] py-1 px-3 rounded-full text-sm hover:bg-[#73000a]/20 hover:shadow-[0_2px_8px_rgba(115, 0, 10, 0.2)] transition">
                                         {tech}
