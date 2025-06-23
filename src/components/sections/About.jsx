@@ -5,7 +5,7 @@ export const About = () => {
 
     const technicalSkills = ["Data structures", "Algorithms", "Object oriented programming", "Debugging", "Unit tests", "Clean code"];
     const languagesKnown = ["C", "C++", "Python", "HTML"];
-    const frameworksUsed = ["React", "Django", "Vite", "TailwindCSS", "Docker"];
+    const frameworksUsed = ["React", "Django", "Vite", "TailwindCSS", "Docker", "Kubernetes", "Vagrant"];
     const dataBase = ["PostgreSQL", "MariaDB"];
 
     return (
